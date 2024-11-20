@@ -1,0 +1,53 @@
+﻿<Window x:Class="Aime_Prog_POE.ClaimSubmission" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aime_Prog_POE"
+        mc:Ignorable="d"
+        Title="Claim Submission" Height="450" Width="800" Background="#FFEDF2F4">
+    <Grid>
+        <!-- Title -->
+        <Label Content="Submit Claim" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" 
+               FontSize="24" FontWeight="Bold" Foreground="#1D3557"/>
+
+        <!-- Labels -->
+        <Label Content="Lecturer Name:" HorizontalAlignment="Left" Margin="180,189,0,0" VerticalAlignment="Top" 
+               FontSize="14" Foreground="#1D3557"/>
+        <Label Content="Hours Worked:" HorizontalAlignment="Left" Margin="177,235,0,0" VerticalAlignment="Top" 
+               FontSize="14" Foreground="#1D3557"/>
+        <Label Content="Hourly Rate:" HorizontalAlignment="Left" Margin="177,274,0,0" VerticalAlignment="Top" 
+               FontSize="14" Foreground="#1D3557"/>
+        <Label Content="Additional Notes:" HorizontalAlignment="Left" Margin="177,312,0,0" VerticalAlignment="Top" 
+               FontSize="14" Foreground="#1D3557"/>
+        <Label Content="Upload Documents" HorizontalAlignment="Left" Margin="614,149,0,0" VerticalAlignment="Top" 
+               FontSize="14" Foreground="#1D3557"/>
+
+        <!-- TextBoxes -->
+        <TextBox x:Name="txtLecturerName" HorizontalAlignment="Left" Margin="358,189,0,0" VerticalAlignment="Top" 
+                 Width="120" Background="#A8DADC" BorderBrush="#457B9D"/>
+        <TextBox x:Name="txtHoursWorked" HorizontalAlignment="Left" Margin="358,235,0,0" VerticalAlignment="Top" 
+                 Width="120" Background="#A8DADC" BorderBrush="#457B9D"/>
+        <TextBox x:Name="txtHourlyRate" HorizontalAlignment="Left" Margin="358,274,0,0" VerticalAlignment="Top" 
+                 Width="120" Background="#A8DADC" BorderBrush="#457B9D"/>
+        <TextBox x:Name="txtNotes" HorizontalAlignment="Left" Margin="358,312,0,0" VerticalAlignment="Top" 
+                 Width="120" Background="#A8DADC" BorderBrush="#457B9D"/>
+
+        <!-- Buttons -->
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="338,375,0,0" 
+                VerticalAlignment="Top" Width="100" Background="#457B9D" Foreground="White" 
+                FontWeight="Bold" BorderBrush="#1D3557" BorderThickness="2" Click="btnSubmit_Click"/>
+
+        <!-- File Upload Section -->
+        <Button x:Name="btnUpload" Content="Upload File" HorizontalAlignment="Left" Margin="614,189,0,0" 
+                VerticalAlignment="Top" Width="120" Background="#A8DADC" Foreground="#1D3557" 
+                FontWeight="Bold" BorderBrush="#457B9D" BorderThickness="2" Click="btnUpload_Click"/>
+
+        <Label x:Name="lblFileName" Content="No file selected" HorizontalAlignment="Left" Margin="614,270,0,0" 
+               VerticalAlignment="Top" FontSize="12" Foreground="#457B9D"/>
+
+        <!-- Status Label -->
+        <Label x:Name="lblStatus" Content="" HorizontalAlignment="Left" Margin="358,342,0,0" 
+               VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Foreground="Green"/>
+    </Grid>
+</Window>

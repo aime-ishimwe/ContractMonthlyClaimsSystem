@@ -1,0 +1,41 @@
+﻿<Window x:Class="Aime_Prog_POE.ClaimApproval" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Claim Approval" Height="450" Width="800">
+    <Grid>
+        <ListView x:Name="lvClaims" HorizontalAlignment="Left" Height="300" Margin="20,20,0,0" VerticalAlignment="Top" Width="740"
+                  SelectionChanged="lvClaims_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Full Name" DisplayMemberBinding="{Binding LecturerName}" Width="200"/>
+                    <GridViewColumn Header="Hours Worked" DisplayMemberBinding="{Binding HoursWorked}" Width="100"/>
+                    <GridViewColumn Header="Hourly Rate" DisplayMemberBinding="{Binding HourlyRate}" Width="100"/>
+                    <GridViewColumn Header="Additional Notes" DisplayMemberBinding="{Binding AdditionalNotes}" Width="200"/>
+                    <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Status}" Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Button x:Name="btnApprove" Content="Approve" HorizontalAlignment="Left" Margin="200,350,0,0" VerticalAlignment="Top" Width="100" 
+                Click="ApproveClaim_Click" IsEnabled="False"/>
+        <Button x:Name="btnReject" Content="Reject" HorizontalAlignment="Left" Margin="350,350,0,0" VerticalAlignment="Top" Width="100" 
+                Click="RejectClaim_Click" IsEnabled="False"/>
+
+        <StackPanel HorizontalAlignment="Right" Margin="20,20,20,0" VerticalAlignment="Top" Width="300">
+            <TextBlock Text="Claim ID:"/>
+            <TextBox x:Name="txtClaimId" IsReadOnly="True"/>
+
+            <TextBlock Text="Lecturer Name:"/>
+            <TextBox x:Name="txtLecturerName" IsReadOnly="True"/>
+
+            <TextBlock Text="Hours Worked:"/>
+            <TextBox x:Name="txtHoursWorked" IsReadOnly="True"/>
+
+            <TextBlock Text="Hourly Rate:"/>
+            <TextBox x:Name="txtHourlyRate" IsReadOnly="True"/>
+
+            <TextBlock Text="Additional Notes:"/>
+            <TextBox x:Name="txtAdditionalNotes" IsReadOnly="True" AcceptsReturn="True" Height="100"/>
+        </StackPanel>
+    </Grid>
+</Window>

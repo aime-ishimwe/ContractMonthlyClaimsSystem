@@ -1,0 +1,25 @@
+﻿<Window x:Class="Aime_Prog_POE.ManageLecturerDataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aime_Prog_POE"
+        mc:Ignorable="d"
+        Title="ManageLecturerDataWindow" Height="450" Width="800">
+    <Grid>
+        <!-- Lecturer Name -->
+        <Label Content="Lecturer Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <TextBox x:Name="LecturerNameTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="10,35,0,0"/>
+
+        <!-- Lecturer Email -->
+        <Label Content="Lecturer Email:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,75,0,0"/>
+        <TextBox x:Name="LecturerEmailTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="10,100,0,0"/>
+
+        <!-- Lecturer Phone -->
+        <Label Content="Lecturer Phone:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,140,0,0"/>
+        <TextBox x:Name="LecturerPhoneTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="10,165,0,0"/>
+
+        <!-- Update Button -->
+        <Button Content="Update Data" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="100" Margin="0,0,10,10" Click="UpdateLecturerData_Click"/>
+    </Grid>
+</Window>
