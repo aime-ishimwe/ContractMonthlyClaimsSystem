@@ -19,7 +19,7 @@ namespace Aime_Prog_POE
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
-            string connectionString = "Data Source=AIME\\SQLEXPRESS;Initial Catalog=Monthly_Claims_System;Integrated Security=True;Trust Server Certificate=True";
+            string connectionString = "insert own connection string";
 
             if (!ValidateInput())
             {
