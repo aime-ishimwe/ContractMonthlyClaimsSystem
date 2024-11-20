@@ -20,7 +20,7 @@ namespace Aime_Prog_POE
         private string lecturerId;
 
         // Connection string to your database
-        private string connectionString = "Data Source=AIME\\SQLEXPRESS;Initial Catalog=Monthly_Claims_System;Integrated Security=True;Trust Server Certificate=True";
+        private string connectionString = "insert own connection string";
 
         // Constructor that accepts the lecturerId to load their data
         public ManageLecturerDataWindow(string lecturerId)
