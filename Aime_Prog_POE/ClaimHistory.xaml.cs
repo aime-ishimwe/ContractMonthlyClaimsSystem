@@ -25,7 +25,7 @@ namespace Aime_Prog_POE
 
         private void LoadClaimHistory()
         {
-            string connectionString = "Data Source=AIME\\SQLEXPRESS;Initial Catalog=Monthly_Claims_System;Integrated Security=True;Trust Server Certificate=True";
+            string connectionString = "insert own connection string";
             List<Claim> claims = new List<Claim>();
 
             using (SqlConnection con = new SqlConnection(connectionString))
