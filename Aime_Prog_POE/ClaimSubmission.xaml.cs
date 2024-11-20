@@ -76,7 +76,7 @@ namespace Aime_Prog_POE
 
         private int GetCurrentUserId()
         {
-            string connectionString = "Data Source=AIME\\SQLEXPRESS;Initial Catalog=Monthly_Claims_System;Integrated Security=True;Trust Server Certificate=True";
+            string connectionString = "";
 
             try
             {
