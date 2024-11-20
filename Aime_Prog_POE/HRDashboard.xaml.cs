@@ -18,7 +18,7 @@ namespace Aime_Prog_POE
 {
     public partial class HRDashboard : Window
     {
-        private string connectionString = "Data Source=AIME\\SQLEXPRESS;Initial Catalog=Monthly_Claims_System;Integrated Security=True;Trust Server Certificate=True";
+        private string connectionString = "insert own connection string";
 
         public HRDashboard()
         {
