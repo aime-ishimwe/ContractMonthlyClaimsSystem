@@ -28,7 +28,7 @@ namespace Aime_Prog_POE
 
         private void LoadClaims()
         {
-            string connectionString = "insert own location string";
+            string connectionString = "insert own connection string";
             List<Claim> claims = new List<Claim>();
 
             using (SqlConnection con = new SqlConnection(connectionString))
