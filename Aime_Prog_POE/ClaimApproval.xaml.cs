@@ -104,7 +104,7 @@ namespace Aime_Prog_POE
 
             private void LogClaimApproval(int claimId, bool isApproved)
             {
-                string connectionString = "Data Source=AIME\\SQLEXPRESS;Initial Catalog=Monthly_Claims_System;Integrated Security=True;Trust Server Certificate=True";
+                string connectionString = "insert own connection string";
 
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
